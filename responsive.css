@@ -2,6 +2,20 @@
     html{
         scroll-snap-type: none;
     }
+
+    h1,h2,h3{
+        font-weight: 600;
+    }
+
+    :root{
+        --header-1: 1.5rem; 
+        --header-2: clamp(1.2rem, 1.25vw, 1.5rem);
+        --header-3: 1rem;
+        --para: 1rem;
+        --para-md: clamp(1rem, 1vw, 1.2rem);
+        --para-lg: clamp(1.3rem, 1.25vw, 1.5rem);
+        --para-small: 0.9rem;
+    }
    
     /*
 ==========================================
@@ -17,6 +31,7 @@ HOME RESP PAGE
     }
     .home-contact-section div h2{
         font-weight: 400 !important;
+        font-size: var(--header-2);
     }
     .home-contact-section form{
         width: 100%;
@@ -52,7 +67,7 @@ ABOUT RESP PAGE
     }
 
     .about-video-section{
-        padding: 0;
+        padding: 0 0 1rem 0;
     }
 
     .about-video-section .inner-wrapper{
@@ -65,8 +80,9 @@ ABOUT RESP PAGE
     }
 
     .about-video-section .video-container img{
-        width: 100%;
+        width: 90%;
         height: 450px;
+        margin: 0 auto;
         display: block;
     }
 
@@ -78,7 +94,7 @@ ABOUT RESP PAGE
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        top: 0;
+        position: relative;
         background-color: #11111181;
     }
 
