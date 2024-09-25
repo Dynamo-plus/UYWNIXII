@@ -1,4 +1,8 @@
 @media screen and (max-width:640px){
+    html{
+        scroll-snap-type: none;
+    }
+   
     /*
 ==========================================
 HOME RESP PAGE
