@@ -1,19 +1,30 @@
 const menuButton = document.querySelector('.menu-button');
-    const menu = document.getElementById('menu');
+const menu = document.getElementById('menu');
+const serviceMenu = document.getElementById('sub-link'); // Select the Services link
+const submenu = serviceMenu.nextElementSibling; // Get the submenu
 
-    // Toggle menu on button click
-    menuButton.addEventListener('click', () => {
-      menu.classList.toggle('active');
-    });
+console.log(serviceMenu);
+// Toggle main menu on button click
+menuButton.addEventListener('click', () => {
+    menu.classList.toggle('active');
+});
 
-    // Hide menu when clicking outside
-    document.addEventListener('click', (event) => {
-      if (!menu.contains(event.target) && !menuButton.contains(event.target)) {
+// Hide menu when clicking outside
+document.addEventListener('click', (event) => {
+    if (!menu.contains(event.target) && !menuButton.contains(event.target)) {
         menu.classList.remove('active');
-      }
-    });
+    }
+});
 
-    // Hide menu on window resize
-    window.addEventListener('resize', () => {
-      menu.classList.remove('active');
-    });
+// Hide menu on window resize
+window.addEventListener('resize', () => {
+    menu.classList.remove('active');
+});
+
+// Toggle submenu on Services link click for mobile view
+serviceMenu.addEventListener('click', (event) => {
+    if (window.innerWidth <= 768) { // Only trigger submenu on mobile view
+        event.preventDefault(); // Prevent navigation to Services page
+        submenu.classList.toggle('active'); // Toggle the submenu
+    }
+});

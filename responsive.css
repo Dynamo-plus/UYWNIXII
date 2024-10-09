@@ -16,16 +16,64 @@
         --para-lg: clamp(1.3rem, 1.25vw, 1.5rem);
         --para-small: 0.9rem;
     }
+
+    .hide{
+        display: none;
+    }
    
     /*
 ==========================================
 HOME RESP PAGE
 ==========================================
 */
-    .home-offer-section{
-        grid-template-columns: 1fr;
+    .classic__container .header__content{
+        text-align: left;
     }
 
+    .classic__container .header__content h3{
+        width: 100%;
+    }
+
+    .classic__container .image__contents{
+        grid-template-columns: auto;
+        padding-block: 2rem 1rem;
+    }
+
+    .classic__container .image__contents .img__wrapper.img__hidden{
+        display: none;
+    }
+
+    .classic__container .footer__content div{
+        width: 100%;
+    }
+
+
+    .service__container{
+        width: 100%;
+        padding-inline: 1rem;
+        padding-block: 2rem 1rem;
+   }
+
+   .service__content h3{
+        font-size: 2rem;
+        line-height: 1.2;
+   }
+
+   .service__content p{
+        width: 100%;
+   }
+
+   .service__items{
+        grid-template-columns: auto;
+        grid-template-columns: auto;
+        gap: 2rem;
+        margin-top: 2rem;
+   }
+
+   .service__items div{
+        padding: 3rem 2rem;
+   }
+   
     .home-contact-section{
         width: 90%;
     }
@@ -133,8 +181,8 @@ SERVICES RESP PAGE
 }
 
 .offer-body{
-    flex-direction: column;
-    gap: 0;
+    grid-template-columns: 1fr;
+    gap: .5rem  ;
     width: 100%;
 }
 
@@ -150,6 +198,10 @@ SERVICES RESP PAGE
     font-size: var(--para-md);
     color: rgb(65, 65, 65);
     margin-top: 1rem;
+}
+
+.offer-control{
+    top: 25%;
 }
 
 .blogs-section .section-title{
@@ -174,6 +226,20 @@ SERVICES RESP PAGE
     height: 100%;
 }
 
+.news__section .news__container{
+    width: 90%;
+}
+.news__container .news__header{
+    display: block;
+}
+.news__container .news__header h3{
+    font-size: 1.5rem;
+}
+
+.news__container .news__body{
+    grid-template-columns: 1fr;
+}
+
 .service-section .section-title, 
 .service-section .service-wrapper,
 .contact-section{
@@ -187,6 +253,87 @@ CONTACT RESP PAGE
 */
 nav{
     position: relative;
+    padding-block: .5rem 0;
+}
+.nav-container{
+    /* position: relative; */
+    width: 100%;
+    padding-inline: 1rem;
+}
+
+.nav-container .img-wrapper{
+    width: 10%;
+}
+
+.nav-container ul#menu{
+    opacity: 0;
+    visibility: hidden;
+    background-color: var(--color-white);
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    right: 0;
+    text-align: left;
+    display: block;
+    border: 1px solid rgba(128, 128, 128, .35);
+}
+
+.nav-container ul#menu.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav-container ul li:not(:last-child){
+    border-bottom: 1px solid rgba(128, 128, 128, .35);
+
+}
+
+.nav-container ul.active{
+    display: block;
+}
+
+.nav-container ul .link > a{
+    display: block;
+    color: var(--color-primary);
+    padding: 1rem 1rem;
+
+}
+
+.nav-container ul#menu .link .submenu {
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 1;
+    padding: 0;
+    background-color: var(--color-white);
+    display: block;
+    border-radius: 0;
+    transition: max-height 0.3s ease-in;
+}
+
+.nav-container ul#menu .link .submenu.active {
+    max-height: max-content;
+}
+
+.nav-container ul#menu .link .submenu li a {
+    display: block;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid white;
+    color: var(--color-primary);
+}
+
+
+.nav-container .menu-button{
+    opacity: 1;
+    display: block;
+    font-size: 1.5rem;
+}
+
+/* nav{
+    position: relative;
 }
 .nav-container{
     position: relative;
@@ -197,6 +344,7 @@ nav{
 .nav-container .img-wrapper{
     width: 10%;
 }
+
 
 .nav-container ul{
     background-color: rgba(255, 255, 255, 0.61);
@@ -222,10 +370,11 @@ nav{
 
 }
 
+
 .menu-button{
     display: block;
     font-size: 1.5rem;
-}
+} */
 
 .contact-header div{
     width: 90%;

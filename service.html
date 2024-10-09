@@ -13,17 +13,33 @@
     <nav>
         <div class="nav-container">
             <div class="img-wrapper">
-                <img src="assets/images/logo.png" alt="">
+                <img src="assets/images/logo.png" alt="Logo">
             </div>
             <ul id="menu">
-                <li><a href="/">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="service.html">Services</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li class="link"><a href="/">Home</a></li>
+                <li class="link"><a href="about.html">About Us</a></li>
+                <li class="link">
+                    <a href="service.html" id="sub-link">Services <i class="uil uil-angle-down"></i></a>
+                    <ul class="submenu">
+                        <li><a href="service.html">Application</a></li>
+                        <li><a href="service.html">Consulting</a></li>
+                        <li><a href="service.html">Engineering</a></li>
+                        <li><a href="service.html">Artificial Intelligence</a></li>
+                        <li><a href="service.html">Blockchain Development</a></li>
+                        <li><a href="service.html">Cybersecurity</a></li>
+                        <li><a href="service.html">Sustainability</a></li>
+                        <li><a href="service.html">Business Process </a></li>
+                        <li><a href="service.html">Data & Analytics</a></li>
+                        <li><a href="service.html">Cloud</a></li>
+                        <li><a href="service.html">Digital Experience</a></li>
+                    </ul>
+                </li>
+                <li class="link"><a href="contact.html">Contact Us</a></li>
             </ul>
             <div class="menu-button"><i class="uil uil-bars"></i></div>
-        </div>        
+        </div>
     </nav>
+    
     <section class="static-hero-section">
         <div class="hero-img-wrapper">
             <img src="assets/images/section_bg.webp" alt="">
@@ -39,44 +55,84 @@
                 <h1>Who We Are</h1>
                 <p>We are a mix of strategists, creative directors, designers, writers, media strategists, digital marketers, developers and relationship builders. We’re committed to creating vibrant and relevant brand experiences on every level.</p>
             </div>
+            <div class="offer-body__container">
+                <div class="slider-wrapper">
 
-            <div class="offer-body">
-                <div class="img-wrapper"><img src="assets/images/data.webp" alt=""></div>
-                <div class="offer-content">
-                    <p class="bold">Customer services engineering</p>
-                    <p>We put the customer at the center of a multidisciplinary, agile approach: alignment of strategy, design, and technology around the customer journey, enabling innovation of the product service experience through iterative, incremental activations and deliver continual enterprise transformation at speed and at scale.</p>
+                    <div class="offer-body">
+                        <div class="img-wrapper"><img src="assets/images/data.webp" alt=""></div>
+                        <div class="offer-content">
+                            <p class="bold">Customer services engineering</p>
+                            <p>We put the customer at the center of a multidisciplinary, agile approach: alignment of strategy, design, and technology around the customer journey, enabling innovation of the product service experience through iterative, incremental activations and deliver continual enterprise transformation at speed and at scale.</p>
+                        </div>
+                    </div>
+                   <div class="offer-body">
+                        <div class="img-wrapper"><img src="assets/images/strategy.webp" alt=""></div>
+                        <div class="offer-content">
+                            <p class="bold">Strategy</p>
+                            <p>The full breadth of UYWNIX Digital and Design capabilities in strategy, design and technology positions us at intersections where we derive insight, shape interaction, develop integration and unlock innovation - with the customer's journey at the center of everything we do.</p>
+                        </div>
+                    </div>
+                   <div class="offer-body">
+                        <div class="img-wrapper"><img src="assets/images/sdev.webp" alt=""></div>
+                        <div class="offer-content">
+                            <p class="bold">Design</p>
+                            <p>The full breadth of UYWNIX Digital and Design capabilities in strategy, design and technology positions us at intersections where we derive insight, shape interaction, develop integration and unlock innovation - with the customer's journey at the center of everything we do.</p>
+                        </div>
+                    </div>
+                   <div class="offer-body">
+                        <div class="img-wrapper"><img src="assets/images/insight.webp" alt=""></div>
+                        <div class="offer-content">
+                            <p class="bold">Insights</p>
+                            <p>Enormous amounts of information are now accessible as never before - from proprietary big data to new public sources of open data. We’ll help you make sense of the challenges to make better decisions.</p>
+                        </div>
+                    </div>
+                    <div class="offer-body">
+                        <div class="img-wrapper"><img src="assets/images/boperation.webp" alt=""></div>
+                        <div class="offer-content">
+                            <p class="bold">Technology</p>
+                            <p>The full breadth of UYWNIX Digital and Design capabilities in strategy, design and technology positions us at intersections where we derive insight, shape interaction, develop integration and unlock innovation - with the customer's journey at the center of everything we do.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="offer-control">
+                    <button class="uil uil-arrow-left" id="prev"></button>
+                    <button class="uil uil-arrow-right" id="next"></button>
                 </div>
             </div>
-            <div class="offer-nav">
-                <div class="tab active">
-                    <div>
-                        <img src="assets/images/img_one.png" alt="">
+            
+            <div class="offer-nav hidden">
+                <div class="slides">
+                    <div class="tab active slide">
+                        <div>
+                            <img src="assets/images/img_one.png" alt="">
+                        </div>
+                        <p>Digital</p>
                     </div>
-                    <p>Digital</p>
-                </div>
-                <div class="tab">
-                    <div>
-                        <img src="assets/images/img_one.png" alt="">
+                    <div class="tab slide">
+                        <div>
+                            <img src="assets/images/img_two.png" alt="">
+                        </div>
+                        <p>Strategy</p>
                     </div>
-                    <p>Digital</p>
-                </div>
-                <div class="tab">
-                    <div>
-                        <img src="assets/images/img_one.png" alt="">
+                    <div class="tab slide">
+                        <div>
+                            <img src="assets/images/img_three.png" alt="">
+                        </div>
+                        <p>Design</p>
                     </div>
-                    <p>Digital</p>
-                </div>
-                <div class="tab">
-                    <div>
-                        <img src="assets/images/img_one.png" alt="">
+                    <div class="tab slide">
+                        <div>
+                            <img src="assets/images/img_four.png" alt="">
+                        </div>
+                        <p>Insights</p>
                     </div>
-                    <p>Digital</p>
-                </div>
-                <div class="tab">
-                    <div>
-                        <img src="assets/images/img_one.png" alt="">
+                    <div class="tab slide">
+                        <div>
+                            <img src="assets/images/img_five.png" alt="">
+                        </div>
+                        <p>Technology</p>
                     </div>
-                    <p>Digital</p>
                 </div>
             </div>
         </div>
@@ -88,36 +144,36 @@
             <div class="grid-item short">
                 <img src="assets/images/btc.webp" alt="">
                 <div class="img-caption">
-                    <h3>This the image caption are we coool</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum vitae hic voluptas optio voluptatem explicabo!</p>
+                    <h3>Revolutionized Supply Chain with Blockchain Integration</h3>
+                    <p>Developed a custom blockchain solution that enhanced transparency and efficiency across global operations.</p>
                 </div>
             </div>
             <div class="grid-item tall">
                 <img src="assets/images/pspace.webp" alt="">
                 <div class="img-caption">
-                    <h3>This the image caption are we coool</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum vitae hic voluptas optio voluptatem explicabo!</p>
+                    <h3>Transformed Office Productivity with Smart Workspace Solutions</h3>
+                    <p>Introduced an IoT-driven workspace management system, streamlining operations and improving employee collaboration by 40%.</p>
                 </div>
             </div>
             <div class="grid-item tall">
                 <img src="assets/images/virtualworld.webp" alt="">
                 <div class="img-caption">
-                    <h3>This the image caption are we coool</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum vitae hic voluptas optio voluptatem explicabo!</p>
+                    <h3>Pioneered Tech Trends for Next-Gen Fintech Platform</h3>
+                    <p>Delivered cutting-edge solutions leveraging IoT and 5G, positioning the platform as a leader in digital finance.</p>
                 </div>
             </div>
             <div class="grid-item short">
                 <img src="assets/images/ai.webp" alt="">
                 <div class="img-caption">
-                    <h3>This the image caption are we coool</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum vitae hic voluptas optio voluptatem explicabo!</p>
+                    <h3>AI-Powered Analytics Boosted Customer Insights by 250%</h3>
+                    <p>Implemented machine learning algorithms to help a retail client optimize personalization and product recommendations.</p>
                 </div>
             </div>
         </div>
         <a class="show-btn button-lg" href="">Show more</a>
     </section>
 
-    <section class="service-section">
+    <section class="service-section" id="service">
         <div class="section-title"><h1>What We Do</h1></div>
         <div class="service-wrapper">
             <div class="service-item">
@@ -126,7 +182,7 @@
                 </div>
                 <div class="service-item-body">
                     <h4>AI Integration</h5>
-                    <p>Make connected customer experience your superpower</p>
+                    <p>Harness the power of AI to automate processes, enhance decision-making, and unlock new insights.</p>
                 </div>
             </div>
             <div class="service-item">
@@ -135,7 +191,7 @@
                 </div>
                 <div class="service-item-body">
                     <h4>IT Consultancy</h5>
-                    <p>Make connected customer experience your superpower</p>
+                    <p>Expert guidance to optimize your digital strategies and drive business growth through innovation.</p>
                 </div>
             </div>
             <div class="service-item">
@@ -144,7 +200,7 @@
                 </div>
                 <div class="service-item-body">
                     <h4>Blockchain Development</h5>
-                    <p>Make connected customer experience your superpower</p>
+                    <p>Build secure, decentralized solutions to enhance transparency, streamline processes, and drive innovation across industries.</p>
                 </div>
             </div>
             <div class="service-item">
@@ -153,7 +209,7 @@
                 </div>
                 <div class="service-item-body">
                     <h4>Software Development</h5>
-                    <p>Make connected customer experience your superpower</p>
+                    <p>Cutting-edge software engineering solutions to design, build, and scale your digital products.</p>
                 </div>
             </div>
             <div class="service-item">
@@ -162,7 +218,7 @@
                 </div>
                 <div class="service-item-body">
                     <h4>UI/UX Design</h5>
-                    <p>Make connected customer experience your superpower</p>
+                    <p>Designing engaging and personalized digital experiences that resonate with your customers across all touchpoints.</p>
                 </div>
             </div>
             <div class="service-item">
@@ -171,7 +227,7 @@
                 </div>
                 <div class="service-item-body">
                     <h4>Help Desk Service</h5>
-                    <p>Make connected customer experience your superpower</p>
+                    <p>Streamline and optimize workflows to boost efficiency and reduce operational costs.</p>
                 </div>
             </div>
             <div class="service-item">
@@ -180,7 +236,7 @@
                 </div>
                 <div class="service-item-body">
                     <h4>SEO</h5>
-                    <p>Make connected customer experience your superpower</p>
+                    <p>Turn data into actionable insights with advanced analytics, driving smarter decisions.</p>
                 </div>
             </div>
             <div class="service-item">
@@ -188,46 +244,46 @@
                     <img src="assets/images/boperation.webp" alt="ai">
                 </div>
                 <div class="service-item-body">
-                    <h4>Application Service</h5>
-                    <p>Make connected customer experience your superpower</p>
+                    <h4>Cybersecurity</h5>
+                    <p>Robust security solutions to safeguard your business against evolving cyber threats.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="blogs-section">
-        <div class="section-title"><h1>Article & News</h1></div>
-        <div class="grid blogs-container">
-            <div class="grid-item short">
-                <img src="assets/images/btc.webp" alt="">
-                <div class="img-caption">
-                    <h3>This the image caption are we coool</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum vitae hic voluptas optio voluptatem explicabo!</p>
-                </div>
+    <section class="news__section">
+        <div class="news__container">
+            <div class="news__header">
+                <h3>Latest News & Insights</h3>
+                <a href="#">All news and insight <i class="uil uil-arrow-right"></i></a>
             </div>
-            <div class="grid-item tall">
-                <img src="assets/images/pspace.webp" alt="">
-                <div class="img-caption">
-                    <h3>This the image caption are we coool</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum vitae hic voluptas optio voluptatem explicabo!</p>
+            <div class="news__body">
+                <div class="news__item">
+                    <div class="img__wrapper">
+                        <img src="assets/images/itc.webp" alt="">
+                    </div>
+                    <div class="category">
+                        <a href="" class="category_link">News</a>
+                        <a href="" class="category_link">Insight</a>
+                    </div>
+                    <a href="#">Whitepaper – Marketing ESG in 2024: Risks, Rewards & Riddles</a>
+
                 </div>
-            </div>
-            <div class="grid-item tall">
-                <img src="assets/images/virtualworld.webp" alt="">
-                <div class="img-caption">
-                    <h3>This the image caption are we coool</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum vitae hic voluptas optio voluptatem explicabo!</p>
-                </div>
-            </div>
-            <div class="grid-item short">
-                <img src="assets/images/ai.webp" alt="">
-                <div class="img-caption">
-                    <h3>This the image caption are we coool</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum vitae hic voluptas optio voluptatem explicabo!</p>
+
+                <div class="news__item">
+                    <div class="img__wrapper">
+                        <img src="assets/images/event.webp" alt="">
+                    </div>
+                    <div class="category">
+                        <a href="" class="category_link">News</a>
+                        <a href="" class="category_link">Insight</a>
+                    </div>
+                    <a href="#">Unlocking the Future: Innovations in Tech and Sustainability Summit 2024</a>
+
                 </div>
             </div>
         </div>
-        <a class="show-btn button-lg" href="">Show more</a>
+        
     </section>
 
     <section class="contact-section">
@@ -238,7 +294,7 @@
             </div>
             <div class="wrapper-body">
                 <h4>Contact us</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, nihil?</p>
+                <p>Have questions or ready to start your project? Get in touch with us today and let's create something amazing together!</p>
             </div>
         </div>
     </section>
@@ -258,5 +314,7 @@
 
     <script src="mansory.js"></script>
     <script src="nav.js"></script>
+    <script src="slide.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

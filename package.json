@@ -10,6 +10,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "masonry-layout": "^4.2.2"
+    "masonry-layout": "^4.2.2",
+    "remixicon": "^4.3.0"
   }
 }
