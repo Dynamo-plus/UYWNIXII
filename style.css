@@ -267,8 +267,7 @@ HOME PAGE
 .classic__container .header__content{
     font-size: 1.25rem;
     display: flex;
-    justify-content: right;
-    text-align: right;
+    text-align: left;
 }
 
 .classic__container .header__content h3{
@@ -291,7 +290,7 @@ HOME PAGE
 
 .classic__container .footer__content div{
     width: 30%;
-    margin-left: auto;
+    /* margin-left: auto; */
 }
 
 .classic__container .footer__content div a{
