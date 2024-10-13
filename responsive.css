@@ -115,35 +115,18 @@ ABOUT RESP PAGE
     }
 
     .about-video-section{
-        padding: 0 0 1rem 0;
+        padding: 1rem;
+        height: auto;
+        flex-direction: column;
+        gap: 2rem;
     }
 
-    .about-video-section .inner-wrapper{
-        display: block;
-    }
-
-    .about-video-section .video-container{
-        width: 100%;
-        min-height: 400px;
-    }
-
-    .about-video-section .video-container img{
-        width: 90%;
+    .video-container{
         height: 450px;
-        margin: 0 auto;
-        display: block;
     }
 
     .about-video-section .video-caption{
         width: 100%;
-        min-height: 100%;
-        padding: 1rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        position: relative;
-        background-color: #11111181;
     }
 
     .about-video-section .video-caption h1{

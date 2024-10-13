@@ -172,7 +172,10 @@ nav{
 .nav-container ul#menu{
     display: flex;
     gap: 2rem 
+}
 
+.nav-container ul#menu > li a{
+    font-size: 1.15rem;
 }
 
 .nav-container .menu-button{
@@ -184,8 +187,8 @@ nav{
     visibility: hidden;
     position: absolute;
     top: 120%;
-    left: 25%;
-    width: 55%;
+    left: 20%;
+    width: 70%;
     margin: 0 auto;
     padding: 1rem 0 1rem 4rem;
     background-color: white;
@@ -636,27 +639,32 @@ li.habits{
     padding-block: 4rem;
     background-color: var(--color-black);
     position: relative;
+    min-height: 100vh;
+    height: 100vh;
+    display: flex;
+    column-gap: 8rem;
 }
 
-.about-video-section .inner-wrapper{
-    display: flex;
-    justify-content: end;
+.video-container{
+    width: auto;
+    height: 100%;
 }
-.about-video-section .video-container{
-    width: 60%;
-}
-.about-video-section .video-container img{
+
+.video-container img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* display: block; */
 }
 
 .about-video-section .video-caption{
     color: white;
     width: 30%;
-    position: absolute;
-    top: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    /* position: absolute;
+    top: 40%; */
 }
 .about-video-section .video-caption h1{
     font-size: var(--header-1);
