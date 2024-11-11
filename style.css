@@ -1380,61 +1380,47 @@ BLOG - Main Page
     justify-content: end;
 }
 
-/* Footer styling */
-footer {
-    background-color: #282c34; /* Dark background color */
-    color: #ffffff; /* White text color */
-    padding: 10px 4rem; /* Padding around the footer */
-    text-align: center; /* Center-align text */
+footer{
+    background: #282c34;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    color: white;
+    padding: 1rem 2rem;
 }
 
-footer span {
-    margin: 0 15px; /* Space between disclaimer and privacy */
-    cursor: pointer; /* Change cursor to pointer for interactivity */
-    color: #61dafb; /* Light blue color for links */
-    transition: color 0.3s ease; /* Smooth color transition */
+footer .social-footer > p{
+    font-size: 1.12rem;
 }
-
-/* Hover effect for links */
-footer span:hover {
-    color: #21a1f1; /* Darker blue on hover */
-}
-
-/* Styling the social-footer container */
-.social-footer {
+footer .social-footer .footer-contact-content p{
     display: flex;
-    justify-content: center; /* Center icons horizontally */
-    gap: 20px; /* Space between each icon */
-    padding: 20px 0; /* Padding for spacing */
-}
-
-/* Styling individual anchor links */
-.social-footer a {
-    text-decoration: none; /* Remove underline from links */
-    transition: transform 0.3s ease; /* Animation for hover */
-}
-
-/* Hover effect for scaling icons */
-.social-footer a:hover {
-    transform: scale(1.1); /* Slight zoom on hover */
-}
-
-/* Styling the wrapper to make it visually centered */
-.wrapper {
-    display: flex;
-    justify-content: center;
     align-items: center;
-    width: 25px; /* Set width */
-    height: 25px; /* Set height */
+    gap: .4rem;
 }
 
-/* Optional styling for the image icons */
-.social-footer img {
-    max-width: 100%;
-    max-height: 100%;
+footer .social-footer .footer-contact-content p span{
+    font-size: 1.25rem;
+}
+
+footer .social-footer .footer-contact-content p a{
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: aqua;
+}
+
+footer .social-footer .media{
+    display: flex;
+    gap: .2rem;
+}
+
+footer .social-footer .media a{
+    display: block;
+    width: max-content;
+}
+
+footer .social-footer .media a img{
+    display: block;
+    width: 30px;
+    object-fit: cover;
 }
 
 
