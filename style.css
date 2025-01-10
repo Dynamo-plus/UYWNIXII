@@ -178,6 +178,7 @@ nav{
 
 .nav-container ul#menu > li a{
     font-size: 1.15rem;
+    color: #111111;
 }
 
 .nav-container .menu-button{
