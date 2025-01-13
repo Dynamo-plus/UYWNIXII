@@ -1,8 +1,6 @@
 const menuButton = document.querySelector('.menu-button');
 const menu = document.getElementById('menu');
 const serviceMenu = document.querySelectorAll('.sub-link');
-const submenu = serviceMenu.nextElementSibling; // Get the submenu
-
 
 console.log(serviceMenu);
 // Toggle main menu on button click
@@ -31,11 +29,3 @@ serviceMenu.forEach((link)=>{
         }
     });
 });
-
-// Toggle submenu on Services link click for mobile view
-/* serviceMenu.addEventListener('click', (event) => {
-    if (window.innerWidth <= 768) { // Only trigger submenu on mobile view
-        event.preventDefault(); // Prevent navigation to Services page
-        submenu.classList.toggle('active'); // Toggle the submenu
-    }
-}); */
